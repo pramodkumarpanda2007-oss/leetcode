@@ -6,9 +6,7 @@ class Solution:
                 if nums[i]<nums[i+1]:
                     cnt+=1
                     max1=max(cnt,max1)
-                elif nums[i]==nums[i+1]:
-                    cnt=0
-                elif nums[i]>nums[i+1]:
+                elif nums[i]>=nums[i+1]:
                     cnt=0
         return max1+1
             
