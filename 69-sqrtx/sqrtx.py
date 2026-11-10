@@ -5,7 +5,7 @@ class Solution:
         h = x
 
         while l <= h:
-            mid = (l + h) // 2
+            mid = l + (h-l) // 2
 
             if mid * mid == x:
                 return mid
